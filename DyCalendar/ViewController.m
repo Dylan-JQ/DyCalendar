@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DyCalendarHeader.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //日历控件加载
+    DyCalendarView *calendarView = [[DyCalendarView alloc] initWithFrame:CGRectZero date:[NSDate date]];
+    [self.view addSubview:calendarView];
 }
 
 
